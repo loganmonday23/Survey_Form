@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Trap Metal Artist Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Favorite Trap Metal Artist Survey Form</h1>
+  <p id="description">This survey asks you who your top favorite trap metal artists are!</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Enter Your Name:</label>
+    <input id="name" type="text" required placeholder="Your Name">
+  
+    <label for="email" id="email-label">Enter Your Email:</label>
+    <input id="email" placeholder="Your Email" type="email" required>
+  
+    <label for="number" id="number-label">Enter Your Age:</label>  
+    <input placeholder="Age" id="number" type="number" min="13" max="120">
+    
+    <label for="dropdown">Select Your Favorite Trap Metal Artist of the Options Available In the Dropdown Menu</label>
+    <select id="dropdown">
+      <option value="">Select one...</option>
+      <option value="ghostemane">Ghostemane</option>
+      <option value="nascar_aloe">Nascar Aloe</option>
+      <option value="lil_darkie">Lil Darkie</option>
+      <option value="warlord_colossus">Warlord Colossus</option>
+      <option value="freddie_dread">Freddie Dread</option>
+    </select>
+
+    <label for="favorite">Is this Your Favorite Trap Metal Artist of All Time?</label>
+    <select id="favorite">
+      <option value="">Select one...</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label>Do you like trap metal more than any other music genre?
+    <label>
+      <input value="yes" type="radio" name="genre-preference"> Yes
+    </label>
+    <label>
+      <input type="radio" value="no" name="genre-preference"> No
+    </label>
+
+    <label>Check the boxes next to the statements that are true for you below:</label> 
+    <label>
+      <input type="checkbox" value="love-trap-metal"> You love Trap Metal!
+    </label>
+    <label>
+      <input type="checkbox" value="been-to-concert">You have been to a Trap Metal Artist's concert before.
+    </label>
+    <label>
+      <input type="checkbox" value="like-mosh-pit">You like to mosh pit!
+    </label>
+
+    <label for="comments">Additional Comments:</label>  
+    <textarea id="comments"></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
